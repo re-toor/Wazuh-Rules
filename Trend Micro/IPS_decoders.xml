@@ -1,0 +1,129 @@
+<decoder name="trend_micro_IPS">
+    <prematch>BVB-TRENDMICRO-SMS</prematch>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>BVB-TRENDMICRO-SMS (\.+)\|(\.+)\|(\d+)\|(\.+)\|(\.+)\|(\.+)\|</regex>
+    <order>suser,srcip,event.id,type,event.status,description</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>BVB-TRENDMICRO-SMS (\.+)\|(\.+)\|(\p\d+)\|(\.+)\|(\.+)\|(\.+)\|</regex>
+    <order>suser,srcip,event.id,type,event.status,description</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>BVB-TRENDMICRO-SMS CEF:0\|(\.+)\|(\.+)\|(\.+)\|(\d+)\|(\.+)\|(\d+)|</regex>
+    <order>application,productname,version,event.id,event.name,severity</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>srcip=(\S+)</regex>
+    <order>srcip</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>spt=(\S+)</regex>
+    <order>srcport</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>dst=(\S+)</regex>
+    <order>dstip</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>dpt=(\d+)</regex>
+    <order>dstport</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs1=(\S+)</regex>
+    <order>cs1</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs1Label=(\.+) \.+=</regex>
+    <order>cs1Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs2=(\.+) \.+=</regex>
+    <order>cs2</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs2Label=(\.+) \w+=</regex>
+    <order>cs2Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs3=(\.+) \.+=</regex>
+    <order>cs3</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs3Label=(\.+) \.+=</regex>
+    <order>cs3Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs4=(\.+) \.+=</regex>
+    <order>cs4</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs4Label=(\.+) \.+=</regex>
+    <order>cs4Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs5=(\.+) \.+=</regex>
+    <order>cs5</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs5Label=(\.+) \.+=</regex>
+    <order>cs5Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs6=(\.+) \.+=</regex>
+    <order>cs6</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>cs6Label=(\.+) \.+=</regex>
+    <order>cs6Label</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>dvchost=(\S+)</regex>
+    <order>dvcshost</order>
+</decoder>
+
+<decoder name="trend_micro_IPS">
+    <parent>trend_micro_IPS</parent>
+    <regex>act=(\S+)</regex>
+    <order>action</order>
+</decoder>
