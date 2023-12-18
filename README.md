@@ -98,6 +98,7 @@ Below are the current rules and integrations currently contained within this rep
 * [Powershell](https://github.com/socfortress/Wazuh-Rules/tree/main/Windows%20Powershell)
 * [Crowdstrike](https://github.com/socfortress/Wazuh-Rules/tree/main/Crowdstrike)
 * [Alienvault](https://github.com/socfortress/Wazuh-Rules/tree/main/Domain%20Stats)
+* [Imperva WAF](https://github.com/re-toor/Wazuh-Rules/tree/main/Imperva)
 * Tessian - WIP
 
 ### Roadmap
