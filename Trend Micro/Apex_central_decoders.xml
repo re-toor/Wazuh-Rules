@@ -1,0 +1,267 @@
+<!--<decoder name="cef_trend_apexcentral">-->
+<!--    <program_name>^CEF</program_name>-->
+<!--    <prematch>(\w+\s+\d+:\d+:\d+)\s+(\d+.\d+.\d+.d+)\s+CEF:\s*0\|Trend Micro\|</prematch>-->
+<!--</decoder> -->
+
+<decoder name="cef_trend_apexcentral">
+    <prematch>(\.*)\s+CEF:\s*0\|Trend Micro\|Apex Central\|</prematch>
+</decoder>
+
+<!--<decoder name="cef_trend_apexcentral">-->
+<!--    <prematch>(\w+\s+\d+\s*\d*\s+\d+:\d+:\d+)\s+(\d+.\d+.\d+.\d+)\s+CEF:\s*0\|Trend Micro\|Apex Central\|</prematch>-->
+<!--</decoder>-->
+
+<!--<decoder name="cef_trend_apexcentral">-->
+<!--    <program_name>^CEF</program_name>-->
+<!--</decoder>-->
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>CEF:\s*0\|Trend Micro\|(Apex Central)\|(\d+)\|(\.+)\|(\.+)\|(\d+)\|</regex>
+    <order>application,version,event.action,event.name,severity</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>src=(\S+)</regex>
+    <order>srcip</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>smac=(\.+) \w+=</regex>
+    <order>smac</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>shost=(\.+) \w+=</regex>
+    <order>shost</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>duser=(\.+) \w+=</regex>
+    <order>duser</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cat=(\.+) \w+=</regex>
+    <order>cat</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>dvchost=(\.+) \w+=</regex>
+    <order>dvchost</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>request=(\.+) \w+=</regex>
+    <order>request</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>deviceFacility=(\.+) \w+=</regex>
+    <order>deviceFacility</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>devicePayloadId=(\S+)</regex>
+    <order>devicePayloadId</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>deviceExternalId=(\S+)</regex>
+    <order>deviceExternalId</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>rt=(\d+-\d+-\d+\s+\d+:\d+:\d+)</regex>
+    <order>rt</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>TMCMLogDetectedHost=(\S+)</regex>
+    <order>TMCMLogDetectedHost</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>TMCMLogDetectedIP=(\S+)</regex>
+    <order>TMCMLogDetectedIP</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>TMCMdevicePlatform=(\.+) \w+=</regex>
+    <order>TMCMdevicePlatform</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>dvchost=(\.+) \w+=</regex>
+    <order>dvchost</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>msg=(\.+) \w+=</regex>
+    <order>msg</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>filePath=(\.+) \w+=</regex>
+    <order>filePath</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>fname=(\.+) \w+=</regex>
+    <order>fname</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>suser=(\.+) \w+=</regex>
+    <order>suser</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>dst=(\S+)</regex>
+    <order>dstip</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs1Label=(\.+) \w+=</regex>
+    <order>cs1Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs1=(\.+) \w+=</regex>
+    <order>cs1</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs2Label=(\.+) \w+=</regex>
+    <order>cs2Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs2=(\.+) \w+=</regex>
+    <order>cs2</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs3Label=(\.+) \w+=</regex>
+    <order>cs3Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs3=(\.+) \w+=</regex>
+    <order>cs3</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs4Label=(\.+) \w+=</regex>
+    <order>cs4Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs4=(\.+) \w+=</regex>
+    <order>cs4</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs5Label=(\.+) \w+=</regex>
+    <order>cs5Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs5=(\.+) \w+=</regex>
+    <order>cs5</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs6Label=(\.+) \w+=</regex>
+    <order>cs6Label</order>
+</decoder>
+
+<decoder name="cef_trend_apexcentral_child">
+    <parent>cef_trend_apexcentral</parent>
+    <regex>cs6=(\.+) \w+=</regex>
+    <order>cs6</order>
+</decoder>
+
+<!--Model 2:-->
+<!--<decoder name="cef_trend_apexcentral">-->
+<!--    <prematch type="pcre2">CEF:0\|Trend Micro\|</prematch>-->
+<!--</decoder>-->
+
+<!--<decoder name="cef_trend_micro_child">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">(\w{3}\s+\d{1,2}\s+\d+\s+\d+:\d+:\d+)\s+(\d+.\d+.\d+.\d+) CEF:0\|Trend Micro\|([^\|]+)\|(\d+)\|([^\|]+)\|([^\|]+)\|(\d+)\|</regex>-->
+<!--    <order>timestamp,location,application,version,event.status,event.name</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="cef_trend_micro_child">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?src=(\S+)</regex>-->
+<!--    <order>srcip</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="cef_trend_micro_child">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?dst=(\S+)</regex>-->
+<!--    <order>dstip</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="devicePayloadId">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?deviceExternalId=(\S+)</regex>-->
+<!--    <order>deviceExternalId</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="devicePayloadId">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?devicePayloadId=(\S+)</regex>-->
+<!--    <order>devicePayloadId</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="trend-micro_child">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?rt=(\.+)</regex>-->
+<!--    <order>rt</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="cs1">-->
+<!--    <parent>cef_trend_apexcentral</parent>-->
+<!--    <regex type="pcre2">CEF:0\|Trend Micro\|.*?cs1=(\.+) cnt=</regex>-->
+<!--    <order>cs1</order>-->
+<!--</decoder>-->
+
+<!--<decoder name="trend-micro-child">-->
+<!--  <parent>cef_trend_apexcentral</parent>-->
+<!--  <regex>\s+cs4Label=(\.+)\s+cs4=(\.+)\s+</regex>-->
+<!--  <order>apex.cs4Label, apex.cs4</order>-->
+<!--</decoder>-->
