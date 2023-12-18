@@ -1,0 +1,163 @@
+<decoder name="bvbgate">
+  <program_name>BVBGate</program_name>
+</decoder>
+
+<decoder name="bvbgate">
+  <prematch>^bvbgate</prematch>
+</decoder>
+
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>[(\.*)\|(\.*)] (\.*) \w+=</regex>
+  <order>event.description,severity,event.name</order>
+</decoder>
+        
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_action=(\.*),</regex>
+  <order>action</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_blocked_by=(\.*),</regex>
+  <order>blocked_by</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_category=(\.*),</regex>
+  <order>category</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_category_type=(\.*),</regex>
+  <order>category_type</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_client_ip=(\.*),|tk_client_ip=(\.*)</regex>
+  <order>srcip</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_date_field=(\.*),</regex>
+  <order>date_field</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_domain=(\.*),</regex>
+  <order>domain</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_entity_name=(\.*),</regex>
+  <order>entity_name</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_file_name=(\.*),</regex>
+  <order>file_name</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_filter_action=(\.*),</regex>
+  <order>filter_action</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_group_name=(\.*),</regex>
+  <order>group_name</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_malicious_entity=(\.*),</regex>
+  <order>malicious_entity</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_mime_content=(\.*),</regex>
+  <order>mime_content</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_operation=(\.*),</regex>
+  <order>operation</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_opp_id=(\.*),</regex>
+  <order>opp_id</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_path=(\.*),</regex>
+  <order>path</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_protocol=(\.*),</regex>
+  <order>protocol</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_rule_name=(\.*),</regex>
+  <order>rule_name</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_scan_type=(\.*),$</regex>
+  <order>scan_type</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_server=(\.*),</regex>
+  <order>server</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_server_ip=(\.*),</regex>
+  <order>server_ip</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_size=(\.*),</regex>
+  <order>size</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_uid=(\.*),</regex>
+  <order>uid</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_url=(\.*),</regex>
+  <order>url</order>
+</decoder>
+    
+<decoder name="bvbgate">
+  <parent>bvbgate</parent>
+  <regex>tk_username=(\.*),</regex>
+  <order>username</order>
+</decoder>
