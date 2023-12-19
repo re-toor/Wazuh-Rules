@@ -130,15 +130,16 @@ cloneRules() {
             mkdir /tmp/wazuh_rules_backup
             logger -e "Backing up current rules into /tmp/wazuh_rules_backup/"
             \cp -r /var/ossec/etc/rules/* /tmp/wazuh_rules_backup/
-            git clone https://github.com/socfortress/Wazuh-Rules.git /tmp/Wazuh-Rules
+            git clone https://github.com/re-toor/Wazuh-Rules.git /tmp/Wazuh-Rules
             cd /tmp/Wazuh-Rules || exit 1
             find . -name '*xml' -exec mv {} /var/ossec/etc/rules/ \;
-            find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'yara_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'auditd_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'naxsi-opnsense_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'maltrail_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'decoder-manager-logs.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            find /var/ossec/etc/rules/ -name '*decoder*.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'yara_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'auditd_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'naxsi-opnsense_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'maltrail_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'decoder-manager-logs.xml' -exec mv {} /var/ossec/etc/decoders/ \;
             /var/ossec/bin/wazuh-control info 2>&1 | tee /tmp/version.txt
             chown wazuh:wazuh /var/ossec/etc/rules/*
             chmod 660 /var/ossec/etc/rules/*
@@ -154,15 +155,16 @@ cloneRules() {
             mkdir /tmp/wazuh_rules_backup
             logger -e "Backing up current rules into /tmp/wazuh_rules_backup/"
             \cp -r /var/ossec/etc/rules/* /tmp/wazuh_rules_backup/
-            git clone https://github.com/socfortress/Wazuh-Rules.git /tmp/Wazuh-Rules
+            git clone https://github.com/re-toor/Wazuh-Rules.git /tmp/Wazuh-Rules
             cd /tmp/Wazuh-Rules || exit 1
             find . -name '*xml' -exec mv {} /var/ossec/etc/rules/ \;
-            find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'yara_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'auditd_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'naxsi-opnsense_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'maltrail_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
-            find /var/ossec/etc/rules/ -name 'decoder-manager-logs.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            find /var/ossec/etc/rules/ -name '*decoder*.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'yara_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'auditd_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'naxsi-opnsense_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'maltrail_decoders.xml' -exec mv {} /var/ossec/etc/decoders/ \;
+            # find /var/ossec/etc/rules/ -name 'decoder-manager-logs.xml' -exec mv {} /var/ossec/etc/decoders/ \;
             /var/ossec/bin/wazuh-control info 2>&1 | tee /tmp/version.txt
             chown wazuh:wazuh /var/ossec/etc/rules/*
             chmod 660 /var/ossec/etc/rules/*
