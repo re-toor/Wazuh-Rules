@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/socfortress/Wazuh-Rules">
+  <a href="https://github.com/re-toor/Wazuh-Rules">
     <img src="images/logo_orange.svg" alt="Logo" width="100" height="100">
     <img src="images/wazuh_logo.png" alt="Logo">
   </a>
@@ -78,26 +78,26 @@ Here's why:
 
 Below are the current rules and integrations currently contained within this repo. Integrations, such as Office365, Trend Micro, etc. will have scripts provided within their respective folders for use. Feel free to build upon these scripts and contribute back :smile:
 
-* [Sysmon for Windows](https://github.com/socfortress/Wazuh-Rules/tree/main/Windows_Sysmon)
-* [Sysmon for Linux](https://github.com/socfortress/Wazuh-Rules/tree/main/Sysmon%20Linux)
-* [Office365](https://github.com/socfortress/Wazuh-Rules/tree/main/Office%20365)
-* [Microsoft Defender](https://github.com/socfortress/Wazuh-Rules/tree/main/Office%20Defender)
-* [Sophos](https://github.com/socfortress/Wazuh-Rules/tree/main/Sophos)
-* [MISP](https://github.com/socfortress/Wazuh-Rules/tree/main/MISP)
-* [Osquery](https://github.com/socfortress/Wazuh-Rules/tree/main/Osquery)
-* [Yara](https://github.com/socfortress/Wazuh-Rules/tree/main/Yara)
-* [Suricata](https://github.com/socfortress/Wazuh-Rules/tree/main/Suricata)
-* [Packetbeat](https://github.com/socfortress/Wazuh-Rules/tree/main/Packetbeat)
-* [Falco](https://github.com/socfortress/Wazuh-Rules/tree/main/Falco)
-* [Modsecurity](https://github.com/socfortress/Wazuh-Rules/tree/main/Modsecurity)
-* [F-Secure](https://github.com/socfortress/Wazuh-Rules/tree/main/F-Secure)
-* [Domain Stats](https://github.com/socfortress/Wazuh-Rules/tree/main/Domain%20Stats)
-* [Snyk](https://github.com/socfortress/Wazuh-Rules/tree/main/Snyk)
-* [Autoruns](https://github.com/socfortress/Wazuh-Rules/tree/main/Windows%20Autoruns)
-* [Sigcheck](https://github.com/socfortress/Wazuh-Rules/tree/main/Windows%20Sysinternals%20Sigcheck)
-* [Powershell](https://github.com/socfortress/Wazuh-Rules/tree/main/Windows%20Powershell)
-* [Crowdstrike](https://github.com/socfortress/Wazuh-Rules/tree/main/Crowdstrike)
-* [Alienvault](https://github.com/socfortress/Wazuh-Rules/tree/main/Domain%20Stats)
+* [Sysmon for Windows](https://github.com/re-toor/Wazuh-Rules/tree/main/Windows_Sysmon)
+* [Sysmon for Linux](https://github.com/re-toor/Wazuh-Rules/tree/main/Sysmon%20Linux)
+* [Office365](https://github.com/re-toor/Wazuh-Rules/tree/main/Office%20365)
+* [Microsoft Defender](https://github.com/re-toor/Wazuh-Rules/tree/main/Office%20Defender)
+* [Sophos](https://github.com/re-toor/Wazuh-Rules/tree/main/Sophos)
+* [MISP](https://github.com/re-toor/Wazuh-Rules/tree/main/MISP)
+* [Osquery](https://github.com/re-toor/Wazuh-Rules/tree/main/Osquery)
+* [Yara](https://github.com/re-toor/Wazuh-Rules/tree/main/Yara)
+* [Suricata](https://github.com/re-toor/Wazuh-Rules/tree/main/Suricata)
+* [Packetbeat](https://github.com/re-toor/Wazuh-Rules/tree/main/Packetbeat)
+* [Falco](https://github.com/re-toor/Wazuh-Rules/tree/main/Falco)
+* [Modsecurity](https://github.com/re-toor/Wazuh-Rules/tree/main/Modsecurity)
+* [F-Secure](https://github.com/re-toor/Wazuh-Rules/tree/main/F-Secure)
+* [Domain Stats](https://github.com/re-toor/Wazuh-Rules/tree/main/Domain%20Stats)
+* [Snyk](https://github.com/re-toor/Wazuh-Rules/tree/main/Snyk)
+* [Autoruns](https://github.com/re-toor/Wazuh-Rules/tree/main/Windows%20Autoruns)
+* [Sigcheck](https://github.com/re-toor/Wazuh-Rules/tree/main/Windows%20Sysinternals%20Sigcheck)
+* [Powershell](https://github.com/re-toor/Wazuh-Rules/tree/main/Windows%20Powershell)
+* [Crowdstrike](https://github.com/re-toor/Wazuh-Rules/tree/main/Crowdstrike)
+* [Alienvault](https://github.com/re-toor/Wazuh-Rules/tree/main/Domain%20Stats)
 * [Imperva WAF](https://github.com/re-toor/Wazuh-Rules/tree/main/Imperva)
 * Tessian - WIP
 
@@ -131,10 +131,10 @@ _You can either manually download the .xml rule files onto your Wazuh Manager or
 1. Become Root User
 2. Run the Script
    ```sh
-   curl -so ~/wazuh_socfortress_rules.sh https://raw.githubusercontent.com/socfortress/Wazuh-Rules/main/wazuh_socfortress_rules.sh && bash ~/wazuh_socfortress_rules.sh
+   curl -so ~/wazuh_socfortress_rules.sh https://raw.githubusercontent.com/re-toor/Wazuh-Rules/main/wazuh_socfortress_rules.sh && bash ~/wazuh_socfortress_rules.sh
    ```
 
-![Alt Text](https://github.com/socfortress/Wazuh-Rules/blob/main/images/run%20install.gif)
+![Alt Text](https://github.com/re-toor/Wazuh-Rules/blob/main/images/run%20install.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
