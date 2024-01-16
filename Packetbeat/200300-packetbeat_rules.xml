@@ -33,9 +33,22 @@
     </rule>
 <!-- EXCLUDE PACKETBEAT ICMP -->
 
-    <rule id="200303" level="1">
+    <rule id="200303" level="3">
         <decoded_as>json</decoded_as>
         <field name="network.transport">icmp</field>
+        <mitre>
+          <id>T1071</id>
+        </mitre>
+        <description>Packetbeat: ICMP flow to $(destination.ip)</description>
+        <options>no_full_log</options>
+        <group>icmp</group>
+    </rule>
+
+    <rule id="200304" level="1">
+        <if_sid>200303</if_sid>
+        <decoded_as>json</decoded_as>
+        <field name="network.transport">icmp</field>
+        <field name="network.type">ipv6</field>        <!-- if don't use ipv6 -->
         <mitre>
           <id>T1071</id>
         </mitre>
